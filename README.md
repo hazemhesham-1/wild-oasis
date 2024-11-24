@@ -1,4 +1,4 @@
-## WILD OASIS (Hotel Management Web Application)
+## Wild Oasis (Hotel Management Web Application)
 <p align="center">
 <b>The Wild Oasis</b> is a hotel management web app, where hotel employees can manage cabins, bookings, and guests. It uses Supabase as the backend and implements advanced React techniques such as HOCs and React Query.
 </p>
@@ -24,3 +24,23 @@
 - **Recharts** for data visualization (charts and stats).
 - **Styled Components** for styling the UI, including dark mode.
 - **Vite** for development environment and build system.
+
+## Setup Instructions
+
+To run this project locally:
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/hazemhesham-1/wild-oasis.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Set up environment variables:
+   - Configure Supabase and add the necessary environment variables in a `.env` file. Check out the `.env.example` for reference.
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open [http://localhost:3000](http://localhost:3000) to see the app.
