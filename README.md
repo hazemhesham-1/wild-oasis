@@ -43,4 +43,4 @@ To run this project locally:
    ```bash
    npm run dev
    ```
-5. Open [http://localhost:3000](http://localhost:3000) to see the app.
+5. Open [http://localhost:5173](http://localhost:5173) to see the app.
