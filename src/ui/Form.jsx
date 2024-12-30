@@ -1,13 +1,20 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Form = styled.form`
-    background-color: var(--color-grey-0);
-    border-radius: var(--border-radius-sm);
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 30px 50px;
+    ${(props) =>
+        props.type === "regular" &&
+        css`
+            background-color: var(--color-grey-0);
+            border: 1px solid var(--color-grey-100);
+            border-radius: var(--border-radius-md);
+            padding: 22px 48px;
+        `}
+    ${(props) => props.type === "modal" && css`width: 768px;`}
     font-size: 18px;
 `;
+
+Form.defaultProps = {
+    type: "regular",
+};
 
 export default Form;

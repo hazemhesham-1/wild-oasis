@@ -2,23 +2,23 @@ import { styled, css } from "styled-components";
 
 const sizes = {
   small: css`
-    padding: 6px 12px;
+    padding: 6px 10px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
   `,
   medium: css`
-    padding: 12px 24px;
-    font-size: 20px;
+    padding: 10px 18px;
+    font-size: 16px;
     font-weight: 500;
   `,
   large: css`
-    padding: 18px 32px;
-    font-size: 22px;
+    padding: 12px 28px;
+    font-size: 20px;
     font-weight: 500;
   `,
-}
+};
 
 const types = {
   primary: css`
@@ -44,7 +44,7 @@ const types = {
       background-color: var(--color-red-800);
     }
   `,
-}
+};
 
 const Button = styled.button`
   ${props => sizes[props.size]}

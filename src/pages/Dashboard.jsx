@@ -1,9 +1,18 @@
+import DashboardFilter from "../features/dashboard/DashboardFilter";
+import DashboardLayout from "../features/dashboard/DashboardLayout";
+import Heading from "../ui/Heading";
+import Row from "../ui/Row";
+
 const Dashboard = () => {
     return (
-        <h1>
-            Dashboard page
-        </h1>
-    )
+        <>
+            <Row type="horizontal">
+                <Heading as="h1">Dashboard</Heading>
+                <DashboardFilter/>
+            </Row>
+            <DashboardLayout/>
+        </>
+    );
 };
 
 export default Dashboard;

@@ -1,6 +1,12 @@
+import SignupForm from "../features/authentication/SignupForm";
+import Heading from "../ui/Heading";
+
 const Users = () => {
     return (
-        <h1>Users page</h1>
+        <>
+            <Heading as="h1">Add a new user</Heading>
+            <SignupForm/>
+        </>
     )
 };
 

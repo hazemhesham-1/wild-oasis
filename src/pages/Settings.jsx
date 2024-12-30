@@ -1,6 +1,13 @@
+import UpdateSettingsForm from "../features/settings/UpdateSettingsForm";
+import Heading from "../ui/Heading";
+import Row from "../ui/Row";
+
 const Settings = () => {
     return (
-        <h1>Settings page</h1>
+        <Row>
+            <Heading as="h1">Hotel Settings Management</Heading>
+            <UpdateSettingsForm/>
+        </Row>
     )
 };
 

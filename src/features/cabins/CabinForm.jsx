@@ -10,7 +10,7 @@ import FileInput from "../../ui/FileInput";
 import { useCreateCabin } from "./useCreateCabin";
 import { useEditCabin } from "./useEditCabin";
 
-const CabinForm = ({ cabinToEdit = {} }) => {
+const CabinForm = ({ cabinToEdit = {}, onModalClose }) => {
     const { createCabin, isCreating } = useCreateCabin();
     const { editCabin, isEditing } = useEditCabin();
     const isLoading = isCreating || isEditing;
@@ -31,12 +31,18 @@ const CabinForm = ({ cabinToEdit = {} }) => {
         const image = typeof data.image === "string" ? data.image : data.image[0];
         if(isEditSession) {
             editCabin({ newCabinData: {...data, image}, id: editId }, {
-                onSuccess: () => reset(),
+                onSuccess: () => {
+                    reset();
+                    onModalClose?.();
+                }
             });
         }
         else {
             createCabin({...data, image}, {
-                onSuccess: () => reset(),
+                onSuccess: () => {
+                    reset();
+                    onModalClose?.();
+                }
             });
         }
     }
@@ -44,7 +50,10 @@ const CabinForm = ({ cabinToEdit = {} }) => {
     if(isLoading) return <Spinner/>
 
     return (
-        <Form onSubmit={handleSubmit(onSubmit)}>
+        <Form
+            onSubmit={handleSubmit(onSubmit)}
+            type={onModalClose ? "modal" : "regular"}
+        >
             <FormRow label="Cabin Name" error={errors?.name?.message}>
                 <Input
                     type="text"
@@ -108,7 +117,9 @@ const CabinForm = ({ cabinToEdit = {} }) => {
                 />
             </FormRow>
             <FormRow>
-                <Button type="reset">Cancel</Button>
+                <Button type="reset" onClick={() => onModalClose?.()}>
+                    Cancel
+                </Button>
                 <Button disabled={isLoading}>
                     {`${isEditSession? "Edit" : "Add New"} Cabin`}
                 </Button>
@@ -119,6 +130,7 @@ const CabinForm = ({ cabinToEdit = {} }) => {
 
 CabinForm.propTypes = {
     cabinToEdit: PropTypes.any,
+    onModalClose: PropTypes.func,
 }
 
 export default CabinForm;

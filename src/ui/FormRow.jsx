@@ -3,9 +3,20 @@ import styled from "styled-components";
 
 const StyledFormRow = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-columns: 320px 1.3fr 1fr;
     align-items: center;
+    gap: 25px;
+    padding: 10px 0;
+    &:first-child {
+        padding-top: 0;
+    }
     &:last-child {
+        padding-bottom: 0;
+    }
+    &:not(:last-child) {
+        border-bottom: 1px solid var(--color-grey-100);
+    }
+    &:last-child:has(button) {
         display: flex;
         justify-content: flex-end;
         gap: 10px;
@@ -22,7 +33,7 @@ const Error = styled.span`
 const FormRow = ({ label , children, error }) => {
     return (
         <StyledFormRow>
-            <Label htmlFor={children.props?.id}>{label}</Label>
+            {label && <Label htmlFor={children.props?.id}>{label}</Label>}
             {children}
             {error && <Error>{error}</Error>}
         </StyledFormRow>

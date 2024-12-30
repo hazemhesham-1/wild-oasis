@@ -1,18 +1,24 @@
-import PropTypes from "prop-types";
 import styled from "styled-components";
+import HeaderMenu from "./HeaderMenu";
+import UserAvatar from "../features/authentication/UserAvatar";
 
 const StyledHeader = styled.header`
-    background-color: aliceblue;
+    background-color: var(--color-grey-0);
+    border-bottom: 1px solid var(--color-grey-100);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 18px 60px;
 `;
 
-const Header = ({ children }) => {
+const Header = () => {
     return (
-        <StyledHeader>{children}</StyledHeader>
+        <StyledHeader>
+            <UserAvatar/>
+            <HeaderMenu/>
+        </StyledHeader>
     );
-}
-
-Header.propTypes = {
-    children: PropTypes.any,
 };
 
 export default Header;

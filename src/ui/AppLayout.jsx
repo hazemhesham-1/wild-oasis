@@ -18,8 +18,8 @@ const Main = styled.main`
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    max-width: 1024px;
+    gap: 15px;
+    max-width: 1200px;
     margin: 0 auto;
 `;
 
@@ -27,7 +27,7 @@ const AppLayout = () => {
     return (
         <StyledAppLayout>
             <Sidebar/>
-            <Header>Header</Header>
+            <Header/>
             <Main>
                 <Container>
                     <Outlet/>

@@ -1,6 +1,17 @@
+import BookingTable from "../features/bookings/BookingTable";
+import BookingTableOperations from "../features/bookings/BookingTableOperations";
+import Heading from "../ui/Heading";
+import Row from "../ui/Row";
+
 const Bookings = () => {
     return (
-        <h1>Bookings page</h1>
+        <>
+            <Row type="horizontal">
+                <Heading as="h1">All Bookings</Heading>
+                <BookingTableOperations/>
+            </Row>
+            <BookingTable/>
+        </>
     )
 };
 
