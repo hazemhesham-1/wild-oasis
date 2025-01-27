@@ -1,28 +1,33 @@
 <div align="center">
-  <img src="./public/logo.png" alt="logo" width="90" height="auto">
+  <img src="./public/logo-light.png" alt="logo" width="90" height="auto">
   <h1>Wild Oasis</h1>
   <h3>
     <a href="https://wild-oasis-egypt.vercel.app">
       <strong>Live Site</strong>
     </a>
   </h3>
-  <div align="center">
-    <a href="https://wild-oasis-egypt.vercel.app">View website</a>
-  </div>
   <hr>
 </div>
 
 <div align="center">
-![Status](https://img.shields.io/badge/Status-Completed-success?style=flat)
+  
+  ![Status](https://img.shields.io/badge/Status-Completed-success?style=flat)
+  
 </div>
 
 <p align="center">
-Welcome to <b>The Wild Oasis</b>! This is a hotel management web app, where hotel employees can manage cabins, bookings, and guests. It uses Supabase as the backend and implements advanced React techniques such as HOCs and React Query.
+Welcome to <b>Wild Oasis</b>! This is a hotel management web app, where hotel employees can manage cabins, bookings, and guests. It uses Supabase as the backend and implements advanced React techniques such as HOCs and React Query.
 </p>
 
-<a align="center" href="https://wild-oasis-egypt.vercel.app">
-![Screenshot](./public/images/IMG-02.PNG)
-</a>
+<a align="center" href="https://wild-oasis-egypt.vercel.app">![Screenshot](./public/images/IMG-02.PNG)</a>
+
+## Live Site (Hotel Admin Version)
+
+Check out the live admin app here: [Wild Oasis - Admin](https://wild-oasis-egypt.vercel.app)
+
+## Customer Version
+
+I also built a **customer version** of this app, where guests can view and book cabins, manage their bookings, and update their profiles. The repository is [here](https://github.com/hazemhesham-1/wild-oasis-customer), and the live site is [here](https://wild-oasis-egy.vercel.app).
 
 ## Key Features
 
