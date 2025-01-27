@@ -24,6 +24,11 @@ Welcome to <b>Wild Oasis</b>! This is a hotel management web app, where hotel em
 ## Live Site (Hotel Admin Version)
 
 Check out the live admin app here: [Wild Oasis - Admin](https://wild-oasis-egypt.vercel.app)
+<br><br>
+Use the following credentials to access the app:
+
+-   **Email Address** : `test@company.org`
+-   **Password** : `12345678`
 
 ## Customer Version
 
