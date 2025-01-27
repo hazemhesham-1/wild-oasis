@@ -1,6 +1,28 @@
+<div align="center">
+  <img src="./public/logo.png" alt="logo" width="90" height="auto">
+  <h1>Wild Oasis</h1>
+  <h3>
+    <a href="https://wild-oasis-egypt.vercel.app">
+      <strong>Live Site</strong>
+    </a>
+  </h3>
+  <div align="center">
+    <a href="https://wild-oasis-egypt.vercel.app">View website</a>
+  </div>
+  <hr>
+</div>
+
+<div align="center">
+![Status](https://img.shields.io/badge/Status-Completed-success?style=flat)
+</div>
+
 <p align="center">
 Welcome to <b>The Wild Oasis</b>! This is a hotel management web app, where hotel employees can manage cabins, bookings, and guests. It uses Supabase as the backend and implements advanced React techniques such as HOCs and React Query.
 </p>
+
+<a align="center" href="https://wild-oasis-egypt.vercel.app">
+![Screenshot](./public/images/IMG-02.PNG)
+</a>
 
 ## Key Features
 
