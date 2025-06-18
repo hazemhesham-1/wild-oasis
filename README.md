@@ -12,7 +12,7 @@
 
 <div align="center">
 
-    ![Status](https://img.shields.io/badge/Status-Completed-success?style=flat)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=flat)
 
 </div>
 
@@ -21,9 +21,10 @@
     Welcome to <strong>Wild Oasis</strong> – a hotel management web application designed to simplify daily operations for hotel employees. This system allows users to manage cabins/rooms, bookings, and staff details easily.
 </p>
 
+
 <a align="center" href="https://wild-oasis-egypt.vercel.app">
 
-    ![Wild Oasis Dashboard](./public/screenshots/wild-oasis-dashboard.png)
+![Wild Oasis Dashboard](./public/screenshots/wild-oasis-dashboard.png)
 
 </a>
 
@@ -31,6 +32,7 @@
 ## 📋 Overview
 
 **Wild Oasis** is a Hotel Management Web Application - built with **React** and powered by **Supabase**. It implements advanced React techniques such as **Higher-Order Components (HOCs)** and **React Query** for efficient data fetching and state management. It also integrates authentication, real-time database storage, and modern UI features like **dark mode**.
+
 
 
 ## 🌟 Project Features
@@ -73,18 +75,19 @@
     - Automatic theme detection based on the user’s system theme preferences.
 
 
+
 ## 📸 Screenshots
 
 ### 🏠 Dashboard
 <div align="center" display="flex">
-    <img src="./public/screenshots/wild-oasis-dashboard.png" alt="Dashboard Page" width="50%"/>
-    <img src="./public/screenshots/wild-oasis-dashboard-dark.png" alt="Dashboard Page (Dark Theme)" width="50%"/>
+    <img src="./public/screenshots/wild-oasis-dashboard.png" alt="Dashboard Page" width="49%"/>
+    <img src="./public/screenshots/wild-oasis-dashboard-dark.png" alt="Dashboard Page (Dark Theme)" width="49%"/>
 </div>
 
 ### 📅 Booking Management
 <div align="center" display="flex">
-    <img src="./public/screenshots/wild-oasis-bookings.png" alt="Booking Management Page" width="50%"/>
-    <img src="./public/screenshots/wild-oasis-booking-details.png" alt="Guest Details" width="50%"/>
+    <img src="./public/screenshots/wild-oasis-bookings.png" alt="Booking Management Page" width="49%"/>
+    <img src="./public/screenshots/wild-oasis-booking-details.png" alt="Guest Details" width="49%"/>
 </div>
 
 ### 🛏️ Cabin/Room Management
@@ -105,6 +108,7 @@
 </div>
 
 
+
 ## 🚀 Live Site (Hotel Admin Version)
 
 You can access the live application here: 👉 **[Wild Oasis - Egypt](https://wild-oasis-egypt.vercel.app)**
@@ -113,6 +117,7 @@ Use the following credentials to access the app:
 
 - **Email Address:** `test@company.org`
 - **Password:** `12345678`
+
 
 
 ## 🛠️ Tech Stack
@@ -126,6 +131,7 @@ Use the following credentials to access the app:
 - **Recharts:** Charting library for data visualization.
 - **Styled Components:** CSS-in-JS for styling the UI.
 - **Netlify** / **Vercel:** Platforms for hosting and continuous deployment.
+
 
 
 ## 📦 Setup Instructions
@@ -152,8 +158,6 @@ To run this project locally:
     ```
 6. Open your browser and navigate to [http://localhost:5173/](http://localhost:5173/).
 
-
----
 
 
 ## 👥 Customer Version

@@ -48,7 +48,7 @@ async function createBookings() {
         return newBooking;
     }
 
-    const generatedBookings = bookings.map((booking) => generateBooking(booking));
+    const generatedBookings = bookings.map((booking, idx) => generateBooking({ ...booking, id: idx + 1 }));
     await supabase.from("bookings").insert(generatedBookings);
 }
 
