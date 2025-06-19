@@ -1,8 +1,8 @@
-import { useState } from "react";
 import { isFuture, isPast, isToday } from "date-fns";
 import styled from "styled-components";
 import supabase from "../services/supabase";
 import { subtractDates } from "../utils/helpers";
+import { useUploader } from "../hooks/useUploader";
 import { bookings } from "./data-bookings";
 import Button from "../ui/Button";
 
@@ -49,29 +49,20 @@ async function createBookings() {
     }
 
     const generatedBookings = bookings.map((booking, idx) => generateBooking({ ...booking, id: idx + 1 }));
-    await supabase.from("bookings").insert(generatedBookings);
-}
-
-async function deleteBookings() {
-    const { error } = await supabase.from("bookings").delete().neq("id", 0);
-    return error;
+    return generatedBookings;
 }
 
 const Uploader = () => {
-    const [isLoading, setIsLoading] = useState(false);
+    const { uploadData, isUploading } = useUploader();
 
-    async function uploadData() {
-        setIsLoading(true);
-        const error = await deleteBookings();
-        if(!error) {
-            await createBookings();
-        }
-        setIsLoading(false);
+    async function handleUpload() {
+        const sampleData = await createBookings();
+        uploadData(sampleData);
     }
 
     return (
         <StyledUploader>
-            <Button onClick={uploadData} disabled={isLoading}>
+            <Button onClick={handleUpload} disabled={isUploading}>
                 Upload Sample Data
             </Button>
         </StyledUploader>

@@ -1,12 +1,11 @@
 <div align="center">
     <img src="./public/assets/logo.png" alt="logo" width="90" height="auto"/>
-    <h1>🏨 Wild Oasis (Egypt)</h1>
+    <h2>🏨 Wild Oasis (Egypt)</h2>
     <h3>
         <a href="https://wild-oasis-egypt.vercel.app">
-            <strong>Live Site</strong>
+            <strong>🌴 Live Site 🌴</strong>
         </a>
     </h3>
-    <hr/>
 </div>
 
 
@@ -151,7 +150,7 @@ To run this project locally:
     npm install
     ```
 4. Set up environment variables:
-   - Configure Supabase and add the necessary environment variables in a `.env.local` file. Check out the `.env.example` for reference.
+   - Configure Supabase and add the necessary environment variables in a `.env.local` file. Check out the `.env.vars` for reference.
 5. Run the development server:
     ```bash
     npm run dev
